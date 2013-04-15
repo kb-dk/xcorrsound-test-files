@@ -1,0 +1,24 @@
+#TODO update
+$TAVERNA_SCRIPT_DIR/../../challenge-KFC-2.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-pmd.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-TEG-1.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-KFC.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-TE-1.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-TEG-2.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-KTC.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-TE-2.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-TEG-3.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-TE-3.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-TEG-4.wav
+$TAVERNA_SCRIPT_DIR/../../Challenge-nbr-1.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-TE-4.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-TEG-5.wav
+$TAVERNA_SCRIPT_DIR/../../Challenge-nbr-2.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-TE-5.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-UKH.wav
+$TAVERNA_SCRIPT_DIR/../../Challenge-nbr-3.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-TE-6.wav
+$TAVERNA_SCRIPT_DIR/../../challenge.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-nbr-7.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-TE-7.wav
+$TAVERNA_SCRIPT_DIR/../../challenge-KFC-3.wav
