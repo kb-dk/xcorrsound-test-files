@@ -43,11 +43,16 @@ This project includes a script to run waveform-compare with the default settings
 | challenge-nbr-7.wav | challenge.wav | Free Audio Server minor not audible silence | false |
 | challenge-TE-7.wav | challenge.wav | Audacity change pitch to A  | false |
 | challenge-KFC-3.wav | challenge.wav | One channel shifted a little less than 0.1 second; cut to original length and both file and stream header updated to correct length | true* |
+| DER259955_mpg321.wav | DER259955_ffmpeg.wav | Converted to wave using different tools | true |
+| complete_garbage.wav | DER259955_ffmpeg.wav | one complete garbage | false |
+| complete_silence.wav | DER259955_ffmpeg.wav | one complete silence | false |
+| partly_silence.wav | DER259955_ffmpeg.wav | one partly silence (see also partly_silence_info.txt) | false |
+| partly_garbage.wav | DER259955_ffmpeg.wav | one second garbage 3 places (see also partly_garbage_info.txt) | false |
 
 Note the classification of files into similar and not similar is debatable. The difference in challenge-pmd.wav
 and challenge.wav is not audible to the human ear, and is only discovered by the waveform-compare tool if the
-match threshold is set to at least 0.9999994 (the default is 0.98). I think however that there is a general feeling
-that we should 'catch' hidden images! The difference between challenge-TE-1.wav
+match threshold is set to at least 0.9999994 (the default is 0.98). This means that our tool does not always
+'catch' hidden images. We think these files are similar! The difference between challenge-TE-1.wav
 and challenge.wav is also not audible, and only discoverable with threshold>=0.99993, and we think they are similar.
 The difference between challenge-TE-2.wav and challenge.wav is audible, but only discoverable with threshold>=0.99.
 The question is whether to accept these as similar. They certainly are similar, but this test file represents a
@@ -59,12 +64,21 @@ awful. The waveform-compare tool however only compares one channel (default chan
 with offset 0. If waveform-compare is set to compare channel 1, it again outputs success, but this time with
 offset 3959. This suggest that the tool should be run on both (all) channels, and the offsets compared.
 
+Note that the DER files are all mono, and thus this issue does not arise.
+
+Note that the sound waves are compared in blocks. The block size also influences the result. If the block size is large,
+a short audible mismatch may be missed. We have set the default block size down from 5 to one second.
+
 ##Sound file attribution and provenance
 
-All sound files are derived from a snippet of a Danish Radio P3 broadcast from TODO when
+All sound files with file names starting with 'challenge' are derived from a snippet of a Danish Radio P3 broadcast
+from October 31st 1995 approximately 8:13 till 8:15 am. The rest of the files are derived from a snippet of
+"Danmarks Erhvervsradio" (Danish Business Radio) from a show called "Børs & Valuta med Amagerbanken" from 8:45
+till 9 am.
 
 ##License
 TODO license.
 
 ##Funding
-This work was partially supported by the [SCAPE](http://www.scape-project.eu/) Project. The SCAPE project is co-funded by the European Union under FP7 ICT-2009.4.1 (Grant Agreement number 270137).
+This work was partially supported by the [SCAPE](http://www.scape-project.eu/) Project. The SCAPE project is
+co-funded by the European Union under FP7 ICT-2009.4.1 (Grant Agreement number 270137).

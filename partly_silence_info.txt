@@ -1,0 +1,7 @@
+Effect applied at seconds: 443, 510 and 11
+
+Vi finder ikke fejlene, MEN! hvis vi ændrer block-size til fx 1 eller
+2 seconds (./waveform compare <filA> <filB> --block-size=1) finder vi
+fejlene. Vi kan også køre med verbose output og så kan vi se de steder
+hvor der er stilhed da match-værdien er væsentligt mindre end 1 (<
+0.8).
