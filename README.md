@@ -73,8 +73,8 @@ a short audible mismatch may be missed. We have set the default block size down 
 
 All sound files with file names starting with 'challenge' are derived from a snippet of a Danish Radio P3 broadcast
 from October 31st 1995 approximately 8:13 till 8:15 am. The rest of the files are derived from a snippet of
-"Danmarks Erhvervsradio" (Danish Business Radio) from a show called "Børs & Valuta med Amagerbanken" from 8:45
-till 9 am.
+"Danmarks Erhvervsradio" (Danish Business Radio) from a show called "Børs & Valuta med Amagerbanken" from 8th of
+January 2002 from 8:45 till 9 am.
 
 ##License
 TODO license.
