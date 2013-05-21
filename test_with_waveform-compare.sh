@@ -10,6 +10,6 @@ pushd $SCRIPT_PATH > /dev/null
 while read line           
 do
     echo $line >> test_result_waveform-compare.txt
-    waveform-compare $line challenge.wav 2>&1 | tee -a test_result_waveform-compare.txt
+    waveform-compare $line original.wav 2>&1 | tee -a test_result_waveform-compare.txt
 done <"challenge_wavlist.txt"
 

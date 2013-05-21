@@ -20,29 +20,29 @@ This project includes a script to run waveform-compare with the default settings
 
 | Test file | Comparison | Annotation	| Similar |
 |:---|:---|:---|:---|
-| challenge-KFC-2.wav | challenge.wav | One channel shifted a little less than 0.1 second; cut to original length and header updated to correct length | false |
-| challenge-pmd.wav | challenge.wav | hidden jpg image in the least significant bits in the wave file using Mathematica; not audible to the human ear | true??? |
-| challenge-TEG-1.wav | challenge.wav | File with random bits, same length as original | false |
-| challenge-KFC.wav | challenge.wav | One channel shifted a little less than 0.1 second | false |
-| challenge-TE-1.wav | challenge.wav | Audacity Amplify 0.1; not audible | true |
-| challenge-TEG-2.wav | challenge.wav | File of double length, song repeated | false |
-| challenge-KTC.wav | challenge.wav | normalize 0dB channel0; normalize -16dB channel1 | false |
-| challenge-TE-2.wav | challenge.wav | Audacity Compressor 10:1 + amplify -5; similar to radio broadcast quality loss | false??? |
-| challenge-TEG-3.wav | challenge.wav | Metadata changed (author) | false |
-| challenge-TE-3.wav | challenge.wav | Audacity Vocal remover + amplify 5 | false |
-| challenge-TEG-4.wav | challenge.wav | Echo effect in the beginning | false |
-| Challenge-nbr-1.wav | challenge.wav | LAoE major changes in sound | false |
-| challenge-TE-4.wav | challenge.wav | Audacity WahWah | false |
-| challenge-TEG-5.wav | challenge.wav | Corrupt Wave-header | false |
-| Challenge-nbr-2.wav | challenge.wav | LAoE major changes in sound | false |
-| challenge-TE-5.wav | challenge.wav | Audacity AM Pitch Shifter 2 | false |
-| challenge-UKH.wav | challenge.wav | hex editor edit values beginning and end of file (hidden messages); audible as short scratches (milliseconds) | false |
-| Challenge-nbr-3.wav | challenge.wav | LAoE major changes in sound | false |
-| challenge-TE-6.wav | challenge.wav | Audacity Echo 1 second | false |
-| challenge.wav | challenge.wav | Exact match | true |
-| challenge-nbr-7.wav | challenge.wav | Free Audio Server minor not audible silence | false |
-| challenge-TE-7.wav | challenge.wav | Audacity change pitch to A  | false |
-| challenge-KFC-3.wav | challenge.wav | One channel shifted a little less than 0.1 second; cut to original length and both file and stream header updated to correct length | true* |
+| challenge-KFC-2.wav | original.wav | One channel shifted a little less than 0.1 second; cut to original length and header updated to correct length | false |
+| challenge-pmd.wav | original.wav | hidden jpg image in the least significant bits in the wave file using Mathematica; not audible to the human ear | true??? |
+| challenge-TEG-1.wav | original.wav | File with random bits, same length as original | false |
+| challenge-KFC.wav | original.wav | One channel shifted a little less than 0.1 second | false |
+| challenge-TE-1.wav | original.wav | Audacity Amplify 0.1; not audible | true |
+| challenge-TEG-2.wav | original.wav | File of double length, song repeated | false |
+| challenge-KTC.wav | original.wav | normalize 0dB channel0; normalize -16dB channel1 | false |
+| challenge-TE-2.wav | original.wav | Audacity Compressor 10:1 + amplify -5; similar to radio broadcast quality loss | false??? |
+| challenge-TEG-3.wav | original.wav | Metadata changed (author) | false |
+| challenge-TE-3.wav | original.wav | Audacity Vocal remover + amplify 5 | false |
+| challenge-TEG-4.wav | original.wav | Echo effect in the beginning | false |
+| Challenge-nbr-1.wav | original.wav | LAoE major changes in sound | false |
+| challenge-TE-4.wav | original.wav | Audacity WahWah | false |
+| challenge-TEG-5.wav | original.wav | Corrupt Wave-header | false |
+| Challenge-nbr-2.wav | original.wav | LAoE major changes in sound | false |
+| challenge-TE-5.wav | original.wav | Audacity AM Pitch Shifter 2 | false |
+| challenge-UKH.wav | original.wav | hex editor edit values beginning and end of file (hidden messages); audible as short scratches (milliseconds) | false |
+| Challenge-nbr-3.wav | original.wav | LAoE major changes in sound | false |
+| challenge-TE-6.wav | original.wav | Audacity Echo 1 second | false |
+| original.wav | original.wav | Exact match | true |
+| challenge-nbr-7.wav | original.wav | Free Audio Server minor not audible silence | false |
+| challenge-TE-7.wav | original.wav | Audacity change pitch to A  | false |
+| challenge-KFC-3.wav | original.wav | One channel shifted a little less than 0.1 second; cut to original length and both file and stream header updated to correct length | true* |
 | DER259955_mpg321.wav | DER259955_ffmpeg.wav | Converted to wave using different tools | true |
 | complete_garbage.wav | DER259955_ffmpeg.wav | one complete garbage | false |
 | complete_silence.wav | DER259955_ffmpeg.wav | one complete silence | false |
@@ -50,11 +50,11 @@ This project includes a script to run waveform-compare with the default settings
 | partly_garbage.wav | DER259955_ffmpeg.wav | one second garbage 3 places (see also partly_garbage_info.txt) | false |
 
 Note the classification of files into similar and not similar is debatable. The difference in challenge-pmd.wav
-and challenge.wav is not audible to the human ear, and is only discovered by the waveform-compare tool if the
+and original.wav is not audible to the human ear, and is only discovered by the waveform-compare tool if the
 match threshold is set to at least 0.9999994 (the default is 0.98). This means that our tool does not always
 'catch' hidden images. We think these files are similar! The difference between challenge-TE-1.wav
-and challenge.wav is also not audible, and only discoverable with threshold>=0.99993, and we think they are similar.
-The difference between challenge-TE-2.wav and challenge.wav is audible, but only discoverable with threshold>=0.99.
+and original.wav is also not audible, and only discoverable with threshold>=0.99993, and we think they are similar.
+The difference between challenge-TE-2.wav and original.wav is audible, but only discoverable with threshold>=0.99.
 The question is whether to accept these as similar. They certainly are similar, but this test file represents a
 loss of quality, and if we accept this loss of quality in a migration once, what happens if this file is migrated
 50 times? So perhaps the default threshold should be 0.99?

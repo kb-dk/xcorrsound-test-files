@@ -18,7 +18,7 @@ $TAVERNA_SCRIPT_DIR/../../challenge-TE-5.wav
 $TAVERNA_SCRIPT_DIR/../../challenge-UKH.wav
 $TAVERNA_SCRIPT_DIR/../../Challenge-nbr-3.wav
 $TAVERNA_SCRIPT_DIR/../../challenge-TE-6.wav
-$TAVERNA_SCRIPT_DIR/../../challenge.wav
+$TAVERNA_SCRIPT_DIR/../../original.wav
 $TAVERNA_SCRIPT_DIR/../../challenge-nbr-7.wav
 $TAVERNA_SCRIPT_DIR/../../challenge-TE-7.wav
 $TAVERNA_SCRIPT_DIR/../../challenge-KFC-3.wav
