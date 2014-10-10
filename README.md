@@ -77,7 +77,7 @@ from October 31st 1995 approximately 8:13 till 8:15 am. The rest of the files ar
 January 2002 from 8:45 till 9 am.
 
 ##License
-TODO license.
+The xcorrSound Test Files are copyright 2012 State and University Library, Denmark released under GPLv2 like XCORRSOUND, see COPYING or http://www.gnu.org/licenses/gpl-2.0.html
 
 ##Funding
 This work was partially supported by the [SCAPE](http://www.scape-project.eu/) Project. The SCAPE project is
